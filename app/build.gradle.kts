@@ -66,4 +66,25 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    //Koin
+    implementation("io.insert-koin:koin-android:3.4.0")
+    implementation("io.insert-koin:koin-androidx-compose:3.4.4")
+
+    //Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    //Coil
+    implementation("io.coil-kt:coil-compose:2.4.0")
+
+    //System UI Controller
+    implementation("com.google.accompanist:accompanist-systemuicontroller:0.30.1")
+
+    //Navigation
+    implementation("androidx.navigation:navigation-compose:2.6.0")
+
+    implementation("androidx.compose.material:material-icons-extended:1.4.3")
+
+
 }
