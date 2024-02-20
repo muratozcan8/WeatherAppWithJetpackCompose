@@ -5,7 +5,10 @@ import androidx.navigation.NavController
 
 @Composable
 fun WeatherScreen(
-    navController: NavController
+    navController: NavController,
+    locationKey: String,
+    locationName: String,
+    country:String
 ) {
 
 }
