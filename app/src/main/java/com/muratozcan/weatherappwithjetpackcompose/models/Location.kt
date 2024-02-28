@@ -13,7 +13,7 @@ data class Location(
     val rank:Int,
     @SerializedName("LocalizedName")
     val localizedName:String,
-    @SerializedName("englishName")
+    @SerializedName("EnglishName")
     val englishName:String,
     @SerializedName("PrimaryPostalCode")
     val primaryPostalCode:String,
@@ -37,30 +37,31 @@ data class Position(
     @SerializedName("Elevation")
     val elevation: Elevation
 )
-
 data class Elevation(
     @SerializedName("Metric")
-    val metric: Value,
+    val metric:Value,
     @SerializedName("Imperial")
     val imperial:Value
 )
 
 data class Value(
     @SerializedName("Value")
-    val value: Value,
+    val value:Double,
     @SerializedName("Unit")
     val unit:String,
     @SerializedName("UnitType")
     val unitType:Int
 )
 
+
+
 data class Name(
     @SerializedName("ID")
     val id:String,
     @SerializedName("LocalizedName")
-    val localizedName: String,
+    val localizedName:String,
     @SerializedName("EnglishName")
-    val englishName: String
+    val englishName:String
 )
 
 data class TimeZone(
@@ -75,17 +76,3 @@ data class TimeZone(
     @SerializedName("NextOffsetChange")
     val nextOffsetChange:String?
 )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
